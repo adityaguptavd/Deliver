@@ -1,0 +1,57 @@
+@use './global.scss';
+@use './globalColor.scss';
+
+footer{
+    background-color: globalColor.$background-dark-alt;
+    color: globalColor.$text-dark;
+    .top{
+        padding: 4rem 0;
+        border-bottom: 2px solid #808080;
+        font-size: 14px;
+        .desc {
+            max-width: 450px;
+            p{ margin-top: 2rem; }
+        }
+        h2, h3, .contact .tel, .quick-links li::before{ color: globalColor.$text-light; }
+        h3{ margin-bottom: 2rem; }
+        .wrapper{
+            max-width: 450px;
+            margin-top: 1rem;
+            h2{ font-size: 2rem; text-transform: none; }
+        }
+        .contact{
+            margin-left: 20px;
+            gap: 1rem;
+            address{ font-style: normal; line-height: 24px; }
+            .tel{ font: 600 16px global.$ff; }
+            a{ &:hover{ text-decoration: underline; text-underline-offset: 4px; } }
+        }
+        .quick-links{
+            a{ &:hover{ text-decoration: underline; text-underline-offset: 4px; } }
+            li{
+                &::before{ content: '\203A'; margin-right: 1rem; font: 600 21px/24px global.$ff; }
+            }
+        }
+        .newsletter{
+            margin-left: 54px;
+            form.flex{ gap: 5px; }
+            .flex-col{ gap: 2rem; }
+            input{ padding: 1rem; max-width: 160px; background-color: #4e4c4c; font-size: 14px; border: none; outline: none; color: globalColor.$text-light; &::placeholder{ color: globalColor.$background-light; } }
+            button{ font-size: 14px; color: globalColor.$text-light; padding: 1rem; background-color: #828282; border: none; outline: none; }
+            button, input{ &:disabled { cursor: not-allowed; opacity: 0.4; } }
+            .popup{ position: fixed; bottom: 20px; right: 20px; background-color: globalColor.$background-light; border-radius: 20px; z-index: 2; padding: 1rem; color: globalColor.$primary-color; transform: translateX(200%); transition: .3s; }
+            .popup.active{ transform: translateX(0); }
+        }
+    }
+    .bottom{
+        padding: 2rem 0;
+        font-size: 12px;
+        .flex{ gap: 2rem; }
+        .copyright{
+            b{ text-transform: uppercase; font-family: global.$ff; }
+            .deliver{ color: globalColor.$text-light; }
+            .year{ font-size: 15px; }
+        }
+        a{ &:hover{ text-decoration: underline; text-underline-offset: 4px; } }
+    }
+}
