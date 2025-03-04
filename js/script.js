@@ -20,7 +20,7 @@ $(function() {
     // window scroll event handler function
     function scrollHandling() {
         const header = $('header');
-        if($('.banner h2').offset().top <= (header.offset().top + header.outerHeight())) {
+        if($(window).scrollTop() !== 0) {
             header.addClass('blur');
         }
         else{
@@ -28,7 +28,7 @@ $(function() {
         }
     }
 
-    function toggleNav() {
+    function toggleSearch() {
         $('.search').toggleClass('active');
         const expanded = $(this).attr('aria-expanded');
         if(expanded === 'false') {
@@ -52,7 +52,7 @@ $(function() {
     $(window).on('scroll', scrollHandling);
 
     // Search toggle
-    $('.search-btn').on('click', toggleNav);
+    $('.search-btn').on('click', toggleSearch);
 
     // Animation when in viewport
     const observer = new IntersectionObserver((entries) => {
