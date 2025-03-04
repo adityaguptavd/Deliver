@@ -1,6 +1,8 @@
 @use '../global/global.scss';
 @use '../global/globalColor.scss';
 
+header{ @include global.Header(globalColor.$text-light, globalColor.$primary-color, globalColor.$background-color-icon, globalColor.$background-light, globalColor.$heading-dark); }
+
 .banner{ 
     background: url(/img/home/bg/banner-bg.webp) no-repeat right top / cover; 
     min-height: 600px;
@@ -28,8 +30,7 @@
     text-align: center;
     .flex-col{ gap: 2rem; max-width: 400px; }
     .caption.flex-col{ gap: 25px; }
-    .row h2{
-        font-size: 18px;
+    .row h3{
         span{
             font-size: 22px;
         }

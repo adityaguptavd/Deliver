@@ -1,4 +1,0 @@
-@use '../global/global.scss';
-@use '../global/globalColor';
-
-header{ @include global.Header(globalColor.$text-light, globalColor.$primary-color, globalColor.$background-color-icon, globalColor.$background-light, globalColor.$heading-dark); }

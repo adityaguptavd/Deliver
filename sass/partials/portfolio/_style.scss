@@ -1,6 +1,8 @@
 @use '../global/global.scss';
 @use '../global/globalColor.scss';
 
+header{ @include global.Header(globalColor.$heading-dark,  globalColor.$primary-color, globalColor.$background-color-light-icon, globalColor.$background-color-light-alt-icon, globalColor.$heading-dark); }
+
 .works{
     .wrapper{
         background: linear-gradient(to bottom, globalColor.$background-dark 0, globalColor.$background-dark 295px, globalColor.$background-light 296px);
@@ -13,7 +15,7 @@
                 .caption{
                     padding-left: 2rem;
                     max-width: 354px;
-                    h2{ font-size: 18px; margin-bottom: 20px; }
+                    h3{ font-size: 18px; margin-bottom: 20px; }
                     p{ margin-bottom: 2rem; }
                 }
                 .img{
