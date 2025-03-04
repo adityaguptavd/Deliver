@@ -1,0 +1,63 @@
+@use '../global/global.scss';
+@use '../global/globalColor.scss';
+
+.works{
+    .wrapper{
+        background: linear-gradient(to bottom, globalColor.$background-dark 0, globalColor.$background-dark 295px, globalColor.$background-light 296px);
+        padding: 2rem 0;
+        .container{
+            .row{
+                .col-tp-12{
+                    margin-bottom: 3rem;
+                }
+                .caption{
+                    padding-left: 2rem;
+                    max-width: 354px;
+                    h2{ font-size: 18px; margin-bottom: 20px; }
+                    p{ margin-bottom: 2rem; }
+                }
+                .img{
+                    position: relative;
+                    cursor: pointer;
+                    .cover{
+                        position: absolute;
+                        background-color: #fffb;
+                        display: grid;
+                        place-items: center;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s linear;
+                        inset: 8% 19% 17% 12%;
+                        .plus{ background-color: globalColor.$text-dark; width: 53px; height: 53px; background-color: #464c52; text-align: center; }
+                        .plus span{ line-height: 53px; font-size: 24px; color: #fffb; }
+                    }
+                    &:hover .cover{ opacity: 1; visibility: visible; }
+                }   
+            }
+        }
+    }
+}
+
+.breadcrumb{
+    padding: 2rem 0;
+    ul{
+        gap: 0.5rem;
+        overflow-x: auto;
+        li{
+            flex-shrink: 0;
+            &:not(:last-child){
+                &::after{
+                    content: '/';
+                    margin-left: 0.5rem;
+                }
+            }
+            a{
+                padding: 2rem 0.5rem;
+                font: 600 18px global.$ff;
+                color: globalColor.$heading-dark;
+                text-transform: uppercase;
+                &.active{ color: globalColor.$primary-color; }
+            }
+        }
+    }
+}

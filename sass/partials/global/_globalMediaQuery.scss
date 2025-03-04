@@ -1,3 +1,5 @@
+@use './globalColor.scss';
+
 @media screen and (max-width: 1240px) {
     header {
         nav{
@@ -34,6 +36,7 @@
 
     nav {
         ul{ 
+            color: globalColor.$text-light;
             &.flex{
                 flex-direction: column;
                 position: fixed;

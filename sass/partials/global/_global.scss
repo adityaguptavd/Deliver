@@ -32,7 +32,7 @@ section{ overflow: hidden; }
 $ff: Novecento, sans-serif;
 
 html{ font: 400 15px HelveticaNeue, sans-serif; }
-body{ font-size: 16px; }
+body{ font-size: 16px; background-color: globalColor.$background-light; }
 
 h2, h3, h4, h5, h6 { font-weight: 600; font-family: $ff; text-transform: uppercase; color: globalColor.$heading-dark; }
 p{ color: globalColor.$text-dark; line-height: 24px; }
@@ -111,6 +111,13 @@ p{ color: globalColor.$text-dark; line-height: 24px; }
         padding: 2rem 0;
         border-bottom: 2px solid $text;
         color: var(--text, $text);
+        .social{
+            a{
+                &:hover{
+                    background-color: $iconBgHover;
+                }
+            }
+        }
     }
 
     nav{ 
@@ -189,17 +196,49 @@ header .social, footer .social{
         background-color: globalColor.$background-color-icon; 
         border-radius: 50%; 
         color: globalColor.$heading-dark;
+    }
+}
+
+footer .social{
+    a{
         &:hover{
             background-color: globalColor.$background-light;
         }
     }
 }
 
+// Every page title (except home)
+.page-title{
+    margin-top: 220px;
+    padding: 35px 0;
+    // background-color: globalColor.$background-dark;
+    background-image: 
+        url('/img/global/bg/title-bg.svg'),
+        linear-gradient(to right, #c0bfa6 0%, #7d747a 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    h2{ color: globalColor.$background-light; font-size: 2.4rem; }
+}
+
 // Our team
-.our-team{
+.intro{
     background-color: globalColor.$background-light;
     padding-top: 4rem;
     .container{ border-bottom: 2px solid globalColor.$text-dark; }
+}
+
+
+.outro{
+    border-top: 2px solid globalColor.$text-dark;
+    padding: 4rem 0;
+    a{
+        text-transform: uppercase;
+        font: 600 14px $ff;
+        padding: 10px 20px;
+        color: globalColor.$text-light;
+        background-color: globalColor.$primary-color;
+    }
 }
 
 .title{
