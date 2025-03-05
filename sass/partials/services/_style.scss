@@ -1,0 +1,80 @@
+@use '../global/global.scss';
+@use '../global/globalColor.scss';
+
+header{ @include global.Header(globalColor.$heading-dark,  globalColor.$primary-color, globalColor.$background-color-light-icon, globalColor.$background-color-light-alt-icon, globalColor.$heading-dark); }
+
+.services{
+    padding-top: 4rem;
+    .service-wrapper{
+        margin-bottom: 4rem;
+        margin-left: 2rem;
+        gap: 2rem;
+        max-width: 500px;
+        h3{
+            margin-bottom: 20px;
+            span{ font-size: 22px; }
+        }
+    }
+}
+
+.pricing-table{
+    background-color: globalColor.$background-dark;
+    padding: 4rem 0 2rem;
+    text-align: center;
+    .price-wrapper{
+        max-width: 300px;
+        width: 300px;
+        background-color: globalColor.$background-light;
+        margin: 2rem 0;
+        .top, .bottom{
+            background-color: globalColor.$primary-color;
+            padding: 20px 0;
+        }
+        .top{
+            h3{ font-size: 22px; color: globalColor.$text-light; }
+        }
+        b{
+            font: 600 42px global.$ff; color: globalColor.$heading-dark;
+            sup{ font-size: 24px; }
+        }
+        p{ padding: 1rem 0; border-top: 1px solid #c2c2c2; }
+        .bottom{
+            a{
+                padding: 1rem 20px;
+                background-color: #a5c895;
+                text-transform: uppercase;
+                color: globalColor.$text-light;
+                &:hover{ background-color: #a6d392; }
+            }
+        }
+    }
+}
+
+.additional-info{
+    padding: 4rem 0;
+    .flex-col{ gap: 2rem; max-width: 345px; margin-bottom: 2rem; }
+}
+
+@media screen and (max-width: 767px) {
+    .additional-info{
+        .flex-col{ max-width: 100%; text-align: center; }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+        .service-wrapper{
+            margin-left: 0;
+        }
+    }    
+}
+
+@media screen and (max-width: 360px) {
+    .services{
+        .service-wrapper{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }    
+}

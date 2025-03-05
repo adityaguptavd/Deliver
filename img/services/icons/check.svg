@@ -1,0 +1,49 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="83px" height="83px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="83px" height="83px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="2" />
+    <feGaussianBlur result="blurOut" stdDeviation="0" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<filter id="Filter_1">
+    <feOffset in="SourceAlpha" dx="0" dy="1" />
+    <feGaussianBlur result="blurOut" stdDeviation="0" />
+    <feFlood flood-color="rgb(255, 255, 255)" result="floodOut" />
+    <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+    <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+    <feBlend mode="normal" in2="SourceGraphic" />
+</filter>
+<linearGradient id="PSgrad_0" x1="0%" x2="70.711%" y1="70.711%" y2="0%">
+  <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.10196" />
+  <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="0" />
+</linearGradient>
+
+</defs>
+<g filter="url(#Filter_0)">
+<g filter="url(#Filter_1)">
+<path fill-rule="evenodd"  fill="rgb(144, 179, 68)"
+ d="M78.1000,7.250 C78.1000,4.350 76.650,2.000 73.750,2.000 L9.250,2.000 C6.350,2.000 4.000,4.350 4.000,7.250 L4.000,71.750 C4.000,74.650 6.350,76.1000 9.250,76.1000 L56.500,76.1000 L78.1000,54.500 L78.1000,7.250 Z"/>
+</g></g>
+<path fill="url(#PSgrad_0)"
+ d="M78.1000,7.250 C78.1000,4.350 76.650,2.000 73.750,2.000 L9.250,2.000 C6.350,2.000 4.000,4.350 4.000,7.250 L4.000,71.750 C4.000,74.650 6.350,76.1000 9.250,76.1000 L56.500,76.1000 L78.1000,54.500 L78.1000,7.250 Z"/>
+<path fill-rule="evenodd"  fill="rgb(236, 234, 223)"
+ d="M65.500,39.477 C65.500,52.731 54.755,63.477 41.500,63.477 C28.245,63.477 17.500,52.731 17.500,39.477 C17.500,26.222 28.245,15.477 41.500,15.477 C54.755,15.477 65.500,26.222 65.500,39.477 Z"/>
+<path fill-rule="evenodd"  fill="rgb(74, 72, 79)"
+ d="M41.461,51.210 L25.233,34.981 L31.596,28.618 L41.461,38.482 L63.404,16.540 L69.768,22.903 L41.461,51.210 Z"/>
+<path fill-rule="evenodd"  fill-opacity="0.2" fill="rgb(0, 0, 0)"
+ d="M25.272,34.713 L4.000,55.985 L4.000,71.715 C4.000,74.613 6.351,76.964 9.250,76.964 L15.479,76.964 L41.500,50.942 L25.272,34.713 "/>
+<path fill-rule="evenodd"  fill-opacity="0.251" fill="rgb(0, 0, 0)"
+ d="M56.500,76.1000 L56.500,54.500 L33.1000,76.1000 L56.500,76.1000 Z"/>
+<path fill-rule="evenodd"  fill="rgb(181, 214, 98)"
+ d="M56.500,54.500 L56.500,76.1000 L78.1000,54.500 L56.500,54.500 Z"/>
+</svg>

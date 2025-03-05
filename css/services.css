@@ -367,79 +367,89 @@ header nav .search form.active {
   visibility: visible;
 }
 
-.works .wrapper {
-  background: linear-gradient(to bottom, #efefef 0, #efefef 295px, #fefefe 296px);
-  padding: 2rem 0;
+.services {
+  padding-top: 4rem;
 }
-.works .wrapper .container .row .col-tp-12 {
-  margin-bottom: 3rem;
+.services .service-wrapper {
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+  gap: 2rem;
+  max-width: 500px;
 }
-.works .wrapper .container .row .caption {
-  padding-left: 2rem;
-  max-width: 354px;
-}
-.works .wrapper .container .row .caption h3 {
-  font-size: 18px;
+.services .service-wrapper h3 {
   margin-bottom: 20px;
 }
-.works .wrapper .container .row .caption p {
-  margin-bottom: 2rem;
+.services .service-wrapper h3 span {
+  font-size: 22px;
 }
-.works .wrapper .container .row .img {
-  position: relative;
-  cursor: pointer;
-}
-.works .wrapper .container .row .img .cover {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7333333333);
-  display: grid;
-  place-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.2s linear;
-  inset: 8% 19% 17% 12%;
-}
-.works .wrapper .container .row .img .cover .plus {
-  background-color: #9b9999;
-  width: 53px;
-  height: 53px;
-  background-color: #464c52;
+
+.pricing-table {
+  background-color: #efefef;
+  padding: 4rem 0 2rem;
   text-align: center;
 }
-.works .wrapper .container .row .img .cover .plus span {
-  line-height: 53px;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.7333333333);
+.pricing-table .price-wrapper {
+  max-width: 300px;
+  width: 300px;
+  background-color: #fefefe;
+  margin: 2rem 0;
 }
-.works .wrapper .container .row .img:hover .cover {
-  opacity: 1;
-  visibility: visible;
+.pricing-table .price-wrapper .top, .pricing-table .price-wrapper .bottom {
+  background-color: #87b672;
+  padding: 20px 0;
 }
-
-.breadcrumb {
-  padding: 2rem 0;
+.pricing-table .price-wrapper .top h3 {
+  font-size: 22px;
+  color: #fff;
 }
-.breadcrumb ul {
-  gap: 0.5rem;
-  overflow-x: auto;
-}
-.breadcrumb ul li {
-  flex-shrink: 0;
-}
-.breadcrumb ul li:not(:last-child)::after {
-  content: "/";
-  margin-left: 0.5rem;
-}
-.breadcrumb ul li a {
-  padding: 2rem 0.5rem;
-  font: 600 18px Novecento, sans-serif;
+.pricing-table .price-wrapper b {
+  font: 600 42px Novecento, sans-serif;
   color: #666262;
-  text-transform: uppercase;
 }
-.breadcrumb ul li a.active {
-  color: #87b672;
+.pricing-table .price-wrapper b sup {
+  font-size: 24px;
+}
+.pricing-table .price-wrapper p {
+  padding: 1rem 0;
+  border-top: 1px solid #c2c2c2;
+}
+.pricing-table .price-wrapper .bottom a {
+  padding: 1rem 20px;
+  background-color: #a5c895;
+  text-transform: uppercase;
+  color: #fff;
+}
+.pricing-table .price-wrapper .bottom a:hover {
+  background-color: #a6d392;
 }
 
+.additional-info {
+  padding: 4rem 0;
+}
+.additional-info .flex-col {
+  gap: 2rem;
+  max-width: 345px;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .additional-info .flex-col {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services .service-wrapper {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .services .service-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
 footer {
   background-color: #333;
   color: #9b9999;
