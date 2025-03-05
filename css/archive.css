@@ -375,89 +375,51 @@ header nav .search form.active {
   visibility: visible;
 }
 
-.services {
-  padding-top: 4rem;
-}
-.services .service-wrapper {
-  margin-bottom: 4rem;
-  margin-left: 2rem;
-  gap: 2rem;
-  max-width: 500px;
-}
-.services .service-wrapper h3 {
-  margin-bottom: 20px;
-}
-.services .service-wrapper h3 span {
-  font-size: 22px;
-}
-
-.pricing-table {
-  background-color: #efefef;
-  padding: 4rem 0 2rem;
-  text-align: center;
-}
-.pricing-table .price-wrapper {
-  max-width: 300px;
-  width: 300px;
-  background-color: #fefefe;
-  margin: 2rem 0;
-}
-.pricing-table .price-wrapper .top, .pricing-table .price-wrapper .bottom {
-  background-color: #87b672;
-  padding: 20px 0;
-}
-.pricing-table .price-wrapper .top h3 {
-  font-size: 22px;
-  color: #fff;
-}
-.pricing-table .price-wrapper b {
-  font: 600 42px Novecento, sans-serif;
-  color: #666262;
-}
-.pricing-table .price-wrapper b sup {
-  font-size: 24px;
-}
-.pricing-table .price-wrapper p {
-  padding: 1rem 0;
-  border-top: 1px solid #c2c2c2;
-}
-.pricing-table .price-wrapper .bottom a {
-  padding: 1rem 20px;
-  background-color: #a5c895;
-  text-transform: uppercase;
-  color: #fff;
-}
-.pricing-table .price-wrapper .bottom a:hover {
-  background-color: #a6d392;
-}
-
-.additional-info {
+aside {
   padding: 4rem 0;
+  color: #9b9999;
 }
-.additional-info .flex-col {
-  gap: 2rem;
-  max-width: 345px;
+aside h3 {
   margin-bottom: 2rem;
 }
+aside.left section {
+  margin-top: 40px;
+}
+aside.left section ul {
+  gap: 1rem;
+}
+aside.left section ul a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+aside.left section ul li::before {
+  content: "›";
+  margin-right: 1rem;
+  font: 600 21px/24px Novecento, sans-serif;
+}
+aside.right section {
+  margin-bottom: 3rem;
+}
+aside.right section.popular-posts ul li:not(:last-child) {
+  border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 1rem;
+}
+aside.right section.popular-posts ul li a {
+  padding-bottom: 1rem;
+}
+aside.right section.twitter-widget li:not(:last-child) {
+  border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 1rem;
+}
+aside.right section.twitter-widget a, aside.right section.twitter-widget span {
+  color: #87b672;
+}
+aside.right section.twitter-widget span {
+  font-size: 14px;
+  margin: 1rem 0;
+  display: inline-block;
+}
 
-@media screen and (max-width: 767px) {
-  .additional-info .flex-col {
-    max-width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .services .service-wrapper {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 360px) {
-  .services .service-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-}
 footer {
   background-color: #333;
   color: #9b9999;

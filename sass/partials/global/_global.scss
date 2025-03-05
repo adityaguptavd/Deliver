@@ -62,7 +62,7 @@ p{ color: globalColor.$text-dark; line-height: 24px; }
 .col-5{ grid-column: span 5; }
 .col-6{ grid-column: span 6; }
 // .col-7{ grid-column: span 7; }
-// .col-8{ grid-column: span 8; }
+.col-8{ grid-column: span 8; }
 // .col-9{ grid-column: span 9; }
 // .col-10{ grid-column: span 10; }
 // .col-11{ grid-column: span 11; }
@@ -103,15 +103,22 @@ p{ color: globalColor.$text-dark; line-height: 24px; }
     right: 0;
     top: 0;
     z-index: 1;
-    transition: .3s linear;
-    &.blur{ background-color: rgba(102, 98, 98, 0.3); }
-    &.blur .header{ padding: 1rem 0; }
-    &.blur::before{
-        content: "";
-        position: absolute;
-        inset: 0;
-        backdrop-filter: blur(5px);
-        z-index: -1;
+    transition: .4s linear;
+    &.blur{
+        background-color: rgba(102, 98, 98, 0.3);
+        .header{ padding: 0; }
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+        nav{
+            ul{
+                a{ padding: 1rem 2rem; padding-left: 0; }
+            }
+        }
     }
     .header{
         transition: .3s linear;

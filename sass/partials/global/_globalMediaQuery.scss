@@ -36,6 +36,7 @@
 
     nav {
         ul{ 
+            padding-top: 1rem;
             color: globalColor.$text-light;
             &.flex{
                 flex-direction: column;
@@ -59,6 +60,7 @@
                 visibility: visible;
                 transform: translateX(0);
             }
+            a{ padding: 2rem !important; }
         }
         .toggle{ display: block; }
     }
