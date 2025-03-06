@@ -36,13 +36,13 @@ section {
 
 @font-face {
   font-family: HelveticaNeue;
-  src: url(../../../fonts/HelveticaNeueRoman.otf);
+  src: url(../fonts/HelveticaNeueRoman.otf);
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: Novecento;
-  src: url(../../../fonts/Novecentosanswide-DemiBold-webfont.woff2);
+  src: url(../fonts/Novecentosanswide-DemiBold-webfont.woff2);
   font-weight: 600;
   font-display: swap;
 }
@@ -233,7 +233,7 @@ footer .social a:hover {
 .page-title {
   margin-top: 220px;
   padding: 35px 0;
-  background-image: url("../../../img/global/bg/title-bg.svg"), linear-gradient(to right, #c0bfa6 0%, #7d747a 100%);
+  background-image: url("../img/global/bg/title-bg.svg"), linear-gradient(to right, #c0bfa6 0%, #7d747a 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -384,7 +384,7 @@ header nav .search form.active {
 }
 
 .banner {
-  background: url(../../../img/home/bg/banner-bg.webp) no-repeat right top/cover;
+  background: url(../img/home/bg/banner-bg.webp) no-repeat right top/cover;
   min-height: 600px;
   text-align: center;
   color: #fff;
@@ -392,7 +392,6 @@ header nav .search form.active {
 }
 .banner .flex-col {
   gap: 2rem;
-  will-change: transform opacity;
 }
 .banner h2 {
   font-size: 2.4rem;
