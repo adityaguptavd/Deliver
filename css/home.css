@@ -384,7 +384,7 @@ header nav .search form.active {
 }
 
 .banner {
-  background: url(../img/home/bg/banner-bg.webp) no-repeat right top/cover;
+  background: #746746 url(../img/home/bg/banner-bg.webp) no-repeat right top/cover;
   min-height: 600px;
   text-align: center;
   color: #fff;
