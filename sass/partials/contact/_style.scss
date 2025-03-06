@@ -1,0 +1,54 @@
+@use '../global/global.scss';
+@use '../global/globalColor.scss';
+
+header{ @include global.Header(globalColor.$heading-dark,  globalColor.$primary-color, globalColor.$background-color-light-icon, globalColor.$background-color-light-alt-icon, globalColor.$heading-dark); }
+
+article, aside{ padding: 4rem 0; h3{ margin-bottom: 2rem; } }
+
+article{
+    .form-wrapper{
+        .flex-col{ gap: 2rem; }
+        fieldset{
+            outline: none;
+            border: none;
+            padding: 0;
+            .field{
+                &.flex-col{ gap: 10px; }
+                label{
+                    text-transform: uppercase;
+                    font: 600 14px global.$ff;
+                    color: globalColor.$heading-dark;
+                    span{ color: #ea6456; }
+                }
+                p{ font-size: 14px; line-height: 14px; }
+                input, textarea{
+                    background-color: globalColor.$background-dark;
+                    border: none;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 10px 4px;
+                    color: globalColor.$heading-dark;
+                }
+                input{ max-width: 350px; }
+                textarea{ resize: none; height: 300px; max-width: 650px; }
+            }
+        }
+        button{ color: globalColor.$text-light; background-color: globalColor.$primary-color; font: 600 14px global.$ff; text-transform: uppercase; padding: 1rem; max-width: 150px; border: none; &:disabled { cursor: not-allowed; opacity: 0.4; } }
+    }
+}
+
+aside{
+    section{
+        margin-bottom: 3rem;
+        &.location{
+            address{ font-style: normal; color: globalColor.$text-dark; margin-top: 2rem; }
+        }
+        &.contact-info{
+            b{ color: #8f8f8f; }
+            .flex{ margin-bottom: 10px; }
+        }
+        &.office-hours{
+            > p{ margin-top: 2rem; }
+        }
+    }
+}

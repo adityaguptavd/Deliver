@@ -245,8 +245,7 @@ footer .social{
 
 
 .outro{
-    border-top: 2px solid globalColor.$text-dark;
-    padding: 4rem 0;
+    .container{ border-top: 2px solid globalColor.$text-dark; padding: 4rem 0; }
     a{
         text-transform: uppercase;
         font: 600 14px $ff;

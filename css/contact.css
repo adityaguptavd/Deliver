@@ -376,89 +376,84 @@ header nav .search form.active {
   visibility: visible;
 }
 
-.services {
-  padding-top: 4rem;
-}
-.services .service-wrapper {
-  margin-bottom: 4rem;
-  margin-left: 2rem;
-  gap: 2rem;
-  max-width: 500px;
-}
-.services .service-wrapper h3 {
-  margin-bottom: 20px;
-}
-.services .service-wrapper h3 span {
-  font-size: 22px;
-}
-
-.pricing-table {
-  background-color: #efefef;
-  padding: 4rem 0 2rem;
-  text-align: center;
-}
-.pricing-table .price-wrapper {
-  max-width: 300px;
-  width: 300px;
-  background-color: #fefefe;
-  margin: 2rem 0;
-}
-.pricing-table .price-wrapper .top, .pricing-table .price-wrapper .bottom {
-  background-color: #87b672;
-  padding: 20px 0;
-}
-.pricing-table .price-wrapper .top h3 {
-  font-size: 22px;
-  color: #fff;
-}
-.pricing-table .price-wrapper b {
-  font: 600 42px Novecento, sans-serif;
-  color: #666262;
-}
-.pricing-table .price-wrapper b sup {
-  font-size: 24px;
-}
-.pricing-table .price-wrapper p {
-  padding: 1rem 0;
-  border-top: 1px solid #c2c2c2;
-}
-.pricing-table .price-wrapper .bottom a {
-  padding: 1rem 20px;
-  background-color: #a5c895;
-  text-transform: uppercase;
-  color: #fff;
-}
-.pricing-table .price-wrapper .bottom a:hover {
-  background-color: #a6d392;
-}
-
-.additional-info {
+article, aside {
   padding: 4rem 0;
 }
-.additional-info .flex-col {
-  gap: 2rem;
-  max-width: 345px;
+article h3, aside h3 {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 767px) {
-  .additional-info .flex-col {
-    max-width: 100%;
-    text-align: center;
-  }
+article .form-wrapper .flex-col {
+  gap: 2rem;
 }
-@media screen and (max-width: 480px) {
-  .services .service-wrapper {
-    margin-left: 0;
-  }
+article .form-wrapper fieldset {
+  outline: none;
+  border: none;
+  padding: 0;
 }
-@media screen and (max-width: 360px) {
-  .services .service-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+article .form-wrapper fieldset .field.flex-col {
+  gap: 10px;
 }
+article .form-wrapper fieldset .field label {
+  text-transform: uppercase;
+  font: 600 14px Novecento, sans-serif;
+  color: #666262;
+}
+article .form-wrapper fieldset .field label span {
+  color: #ea6456;
+}
+article .form-wrapper fieldset .field p {
+  font-size: 14px;
+  line-height: 14px;
+}
+article .form-wrapper fieldset .field input, article .form-wrapper fieldset .field textarea {
+  background-color: #efefef;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 4px;
+  color: #666262;
+}
+article .form-wrapper fieldset .field input {
+  max-width: 350px;
+}
+article .form-wrapper fieldset .field textarea {
+  resize: none;
+  height: 300px;
+  max-width: 650px;
+}
+article .form-wrapper button {
+  color: #fff;
+  background-color: #87b672;
+  font: 600 14px Novecento, sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  max-width: 150px;
+  border: none;
+}
+article .form-wrapper button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+aside section {
+  margin-bottom: 3rem;
+}
+aside section.location address {
+  font-style: normal;
+  color: #9b9999;
+  margin-top: 2rem;
+}
+aside section.contact-info b {
+  color: #8f8f8f;
+}
+aside section.contact-info .flex {
+  margin-bottom: 10px;
+}
+aside section.office-hours > p {
+  margin-top: 2rem;
+}
+
 footer {
   background-color: #333;
   color: #9b9999;

@@ -29,7 +29,7 @@ header{ @include global.Header(globalColor.$heading-dark,  globalColor.$primary-
     }
 }
 
-.outro{ border: none; }
+.outro{ .container{ border: none; } }
 
 @media screen and (max-width: 767px) {
     .mission{
