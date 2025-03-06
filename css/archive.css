@@ -280,7 +280,7 @@ header {
   right: 0;
   top: 0;
   z-index: 1;
-  transition: 0.4s linear;
+  transition: 0.3s linear;
 }
 header.blur {
   background-color: rgba(102, 98, 98, 0.3);
@@ -316,6 +316,7 @@ header nav ul {
   gap: 10px;
 }
 header nav ul a {
+  transition: 0.3s linear;
   text-transform: uppercase;
   font: 600 18px Novecento, sans-serif;
   padding: 2rem;

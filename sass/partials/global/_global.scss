@@ -103,7 +103,7 @@ p{ color: globalColor.$text-dark; line-height: 24px; }
     right: 0;
     top: 0;
     z-index: 1;
-    transition: .4s linear;
+    transition: .3s linear;
     &.blur{
         background-color: rgba(102, 98, 98, 0.3);
         .header{ padding: 0; }
@@ -140,6 +140,7 @@ p{ color: globalColor.$text-dark; line-height: 24px; }
         ul {
             gap: 10px;
             a{
+                transition: .3s linear;
                 text-transform: uppercase;
                 font: 600 18px $ff;
                 padding: 2rem;
