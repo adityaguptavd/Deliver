@@ -40,3 +40,34 @@ header{ @include global.Header(globalColor.$text-light, globalColor.$primary-col
         &:hover{ text-decoration: underline; text-underline-offset: 4px; }
     }
 }
+
+.works{
+    background: linear-gradient(to bottom, globalColor.$background-dark 0, globalColor.$background-dark 363px, globalColor.$background-light 364px);
+    padding: 4rem 0;
+    .container{
+        .row{
+            .col-tp-12{
+                margin-bottom: 3rem;
+            }
+            .img{
+                position: relative;
+                cursor: pointer;
+                .cover{
+                    position: absolute;
+                    background-color: #fffb;
+                    display: grid;
+                    place-items: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .2s linear;
+                    &.first{ inset: 8% 13% 17%; }
+                    &.second{ inset: 8% 14% 18%; }
+                    &.third{ inset: 8% 12% 16%; }
+                    .plus{ background-color: globalColor.$text-dark; width: 53px; height: 53px; background-color: #464c52; }
+                    .plus span{ line-height: 53px; font-size: 24px; color: #fffb; }
+                }
+                &:hover .cover{ opacity: 1; visibility: visible; }
+            }   
+        }
+    }
+}
