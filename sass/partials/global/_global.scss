@@ -11,14 +11,14 @@ section{ overflow: hidden; }
 
 @font-face {
     font-family: HelveticaNeue;
-    src: url(/fonts/HelveticaNeueRoman.otf);
+    src: url(../../../fonts/HelveticaNeueRoman.otf);
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: Novecento;
-    src: url(/fonts/Novecentosanswide-DemiBold-webfont.woff2);
+    src: url(../../../fonts/Novecentosanswide-DemiBold-webfont.woff2);
     font-weight: 600;
     font-display: swap;
 }
@@ -58,18 +58,11 @@ p{ color: globalColor.$text-dark; line-height: 24px; }
 .container{ max-width: 1200px; margin: auto; padding: 0 10px; }
 .row{ display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
 
-// .col-1{ grid-column: span 1; }
-// .col-2{ grid-column: span 2; }
 .col-3{ grid-column: span 3; }
 .col-4{ grid-column: span 4; }
 .col-5{ grid-column: span 5; }
 .col-6{ grid-column: span 6; }
-// .col-7{ grid-column: span 7; }
 .col-8{ grid-column: span 8; }
-// .col-9{ grid-column: span 9; }
-// .col-10{ grid-column: span 10; }
-// .col-11{ grid-column: span 11; }
-// .col-12{ grid-column: span 12; }
 
 // Animation
 .in-viewport.animate{ animation: animate .4s ease-out forwards; }
@@ -231,7 +224,7 @@ footer .social{
     padding: 35px 0;
     // background-color: globalColor.$background-dark;
     background-image: 
-        url('/img/global/bg/title-bg.svg'),
+        url('../../../img/global/bg/title-bg.svg'),
         linear-gradient(to right, #c0bfa6 0%, #7d747a 100%);
     background-repeat: no-repeat;
     background-position: center center;

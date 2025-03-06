@@ -4,7 +4,7 @@
 header{ @include global.Header(globalColor.$text-light, globalColor.$primary-color, globalColor.$background-color-icon, globalColor.$background-light, globalColor.$heading-dark); }
 
 .banner{ 
-    background: url(/img/home/bg/banner-bg.webp) no-repeat right top / cover; 
+    background: url(../../../img/home/bg/banner-bg.webp) no-repeat right top / cover; 
     min-height: 600px;
     text-align: center;
     color: globalColor.$text-light;
