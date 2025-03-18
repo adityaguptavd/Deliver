@@ -1,5 +1,4 @@
 @use './globalColor.scss';
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *, ::before, ::after{ margin: 0; box-sizing: border-box; -webkit-tap-highlight-color: #0000001a; }
 ul{ padding: 0; list-style: none; }
@@ -33,7 +32,7 @@ section{ overflow: hidden; }
 
 $ff: Novecento, sans-serif;
 
-html{ font: 400 15px HelveticaNeue, sans-serif; }
+html{ font: 400 15px HelveticaNeue, sans-serif; font-display: swap; }
 body{ font-size: 16px; background-color: globalColor.$background-light; }
 
 h1, h2, h3 { font-weight: 600; font-family: $ff; text-transform: uppercase; }
